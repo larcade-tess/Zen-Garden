@@ -1,7 +1,25 @@
 body {
   background-color: #083d77;
 }
-
+header {
+  border: 2px solid black;
+  display:flex;
+  justify-content:center;
+  align-self: center;
+  width:300px;
+  flex-flow:wrap;
+}
+footer {
+  border: 2px solid black;
+  display:flex;
+  flex-flow:row;
+  justify-content:center;
+  align-self: center;
+}
+.intro {
+  display:flex;
+  flex-flow:column;
+}
 .extra2 {
   position: fixed;
   bottom: 10px;
