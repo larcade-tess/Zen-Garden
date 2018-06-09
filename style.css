@@ -22,12 +22,21 @@ footer {
 
 .extra2 {
   position: fixed;
-  bottom: 10px; }
+  bottom: 44px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #fff;
+  z-index: 9998; }
 
 .extra1 {
   position: fixed;
-  width: 100px;
-  height: 100px;
-  background: url(prince.svg); }
+  width: 80px;
+  height: 80px;
+  bottom: 20;
+  right: 10px;
+  z-index: 9999;
+  background-image: url(prince.svg);
+  background-size: 100%; }
 
 /*# sourceMappingURL=style.css.map */
