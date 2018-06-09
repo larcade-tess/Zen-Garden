@@ -40,7 +40,42 @@ footer {
   background-image: url(prince.svg);
   background-size: 100%;
 }
+.summary {
+   display: flex;
 
+}
+
+.preamble {
+   display: flex;
+   border: 2px solid black;
+   width: 49.3%;
+}
+
+.explanation{
+   display: flex;
+   border: 2px solid black;
+   width: 50%;
+   float: right;
+}
+
+.participation{
+   display: flex;
+   border: 2px solid black;
+   width: 49.3%;
+}
+
+.benefits {
+   display: flex;
+   border: 2px solid black;
+   width: 50%;
+   float: right;
+}
+
+.requirements {
+   display: flex;
+   border: 2px solid black;
+   width: 49.3%;
+}
 @media screen and (min-width: 600px) {
 
 }
