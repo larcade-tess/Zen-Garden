@@ -1,4 +1,16 @@
 body {
   background-color: #083d77;
-  background-image:url(prince.svg);
+}
+
+.extra2 {
+  position: fixed;
+  bottom: 10px;
+
+}
+
+.extra1{
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: url(prince.svg);
 }
