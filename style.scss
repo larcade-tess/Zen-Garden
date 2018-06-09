@@ -42,40 +42,43 @@ footer {
 }
 .summary {
    display: flex;
-
+   flex-flow:wrap;
 }
 
-.preamble {
+.preamble, .explanation, .participation, .benefits, .requirements {
    display: flex;
    border: 2px solid black;
-   width: 49.3%;
+   width: 80%;
+   flex-flow:wrap;
+   margin-left:auto;
+   margin-right:auto;
 }
 
-.explanation{
-   display: flex;
-   border: 2px solid black;
-   width: 50%;
-   float: right;
-}
-
-.participation{
-   display: flex;
-   border: 2px solid black;
-   width: 49.3%;
-}
-
-.benefits {
-   display: flex;
-   border: 2px solid black;
-   width: 50%;
-   float: right;
-}
-
-.requirements {
-   display: flex;
-   border: 2px solid black;
-   width: 49.3%;
-}
 @media screen and (min-width: 600px) {
+  body {
+    background-color: green;
+  }
+  .summary {
+     display: flex;
+     flex-flow:wrap;
+  }
 
+  .preamble, .participation, .requirements{
+     display: flex;
+     border: 2px solid black;
+     width: 49.3%;
+     flex-flow:wrap;
+     margin-left:0;
+     margin-right:0;
+  }
+
+  .explanation, .benefits{
+     display: flex;
+     border: 2px solid black;
+     width: 50%;
+     float: right;
+     flex-flow:wrap;
+     margin-left:0;
+     margin-right:0;
+  }
 }

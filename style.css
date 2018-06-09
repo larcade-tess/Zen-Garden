@@ -40,33 +40,40 @@ footer {
   background-size: 100%; }
 
 .summary {
-  display: flex; }
+  display: flex;
+  flex-flow: wrap; }
 
-.preamble {
+.preamble, .explanation, .participation, .benefits, .requirements {
   display: flex;
   border: 2px solid black;
-  width: 49.3%; }
+  width: 80%;
+  flex-flow: wrap;
+  margin-left: auto;
+  margin-right: auto; }
 
-.explanation {
-  display: flex;
-  border: 2px solid black;
-  width: 50%;
-  float: right; }
+@media screen and (min-width: 600px) {
+  body {
+    background-color: green; }
 
-.participation {
-  display: flex;
-  border: 2px solid black;
-  width: 49.3%; }
+  .summary {
+    display: flex;
+    flex-flow: wrap; }
 
-.benefits {
-  display: flex;
-  border: 2px solid black;
-  width: 50%;
-  float: right; }
+  .preamble, .participation, .requirements {
+    display: flex;
+    border: 2px solid black;
+    width: 49.3%;
+    flex-flow: wrap;
+    margin-left: 0;
+    margin-right: 0; }
 
-.requirements {
-  display: flex;
-  border: 2px solid black;
-  width: 49.3%; }
+  .explanation, .benefits {
+    display: flex;
+    border: 2px solid black;
+    width: 50%;
+    float: right;
+    flex-flow: wrap;
+    margin-left: 0;
+    margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
