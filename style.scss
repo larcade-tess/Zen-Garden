@@ -4,6 +4,7 @@ $margin:auto;
 $bodywidth:80%;
 $headerWidth:300px;
 $lineColor:#fff;
+$alignment:center;
 
 body {
   background-color: $background-color;
@@ -15,8 +16,8 @@ margin-right:$margin; }
 header {
   border: $border;
   display: flex;
-  justify-content: center;
-  align-self: center;
+  justify-content: $alignment;
+  align-self: $alignment;
   width: $headerWidth;
   flex-flow: wrap; }
 
@@ -25,7 +26,10 @@ footer {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  align-self: center; }
+  align-self: $alignment;
+  width:$bodywidth;
+  margin-left:$margin;
+  margin-right:$margin;}
 
 .intro {
   display: flex;
@@ -113,7 +117,12 @@ footer {
       display:flex;
     }
     .design-selection, .design-archives, .zen-resources {
-      width:45%;
+      width:33%;
+    }
+    footer {
+      width:100%;
+      margin-left: 0;
+      margin-right:0;
     }
   }
 
