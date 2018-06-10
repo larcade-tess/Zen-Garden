@@ -1,5 +1,9 @@
 body {
-  background-color: #083d77; }
+  background-color: #083d77;
+  min-width: 376px;
+  max-width: 1025px;
+  margin-left: auto;
+  margin-right: auto; }
 
 header {
   border: 2px solid black;
@@ -19,6 +23,12 @@ footer {
 .intro {
   display: flex;
   flex-flow: column; }
+
+.summary {
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; }
 
 .extra2 {
   position: fixed;
@@ -68,7 +78,10 @@ footer {
 
   .summary {
     display: flex;
-    flex-flow: wrap; }
+    flex-flow: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; }
 
   .preamble, .participation, .requirements {
     display: flex;

@@ -6,7 +6,11 @@ $headerWidth:300px;
 $lineColor:#fff;
 
 body {
-  background-color: $background-color; }
+  background-color: $background-color;
+min-width:376px;
+max-width:1025px;
+margin-left:$margin;
+margin-right:$margin; }
 
 header {
   border: $border;
@@ -26,6 +30,13 @@ footer {
 .intro {
   display: flex;
   flex-flow: column; }
+
+.summary {
+  border: $border;
+  margin-left: $margin;
+  margin-right: $margin;
+  width:$bodywidth;
+}
 
 .extra2 {
   position: fixed;
@@ -72,11 +83,15 @@ footer {
 
 @media screen and (min-width: 600px) {
   body {
-    background-color: $background-color; }
+    background-color: $background-color;
+    }
 
   .summary {
     display: flex;
-    flex-flow: wrap; }
+    flex-flow: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    width:100%;}
 
   .preamble, .participation, .requirements {
     display: flex;
