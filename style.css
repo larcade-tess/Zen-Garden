@@ -79,6 +79,11 @@ footer {
   body {
     background-color: #083d77; }
 
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3px; }
+
   .summary {
     display: flex;
     flex-flow: wrap;
@@ -86,22 +91,39 @@ footer {
     margin-right: 0;
     width: 100%; }
 
-  .preamble, .participation, .requirements {
-    display: flex;
-    border: 2px solid black;
-    width: 49.3%;
-    flex-flow: wrap;
-    margin-left: 0;
-    margin-right: 0; }
-
-  .explanation, .benefits {
+  .preamble {
     display: flex;
     border: 2px solid black;
     width: 50%;
-    float: right;
-    flex-flow: wrap;
-    margin-left: 0;
-    margin-right: 0; }
+    margin-left: 0; }
+
+  .participation {
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    grid-column-start: 1;
+    grid-row-start: 3; }
+
+  .requirements {
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    grid-column-start: 1;
+    grid-row-start: 5; }
+
+  .explanation {
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    grid-column-start: 2;
+    grid-row-start: 2; }
+
+  .benefits {
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    grid-column-start: 2;
+    grid-row-start: 4; }
 
   .wrapper {
     display: flex; }
@@ -112,7 +134,10 @@ footer {
   footer {
     width: 100%;
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0;
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: span 2; } }
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
