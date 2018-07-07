@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cookie");
 body {
   background-color: #083d77;
   min-width: 376px;
@@ -5,8 +6,68 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+h1, h2, h3 {
+  font-family: "Cookie", cursive;
+  color: #f7bc53; }
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 .4em; }
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem; } }
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem; } }
+h2, h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0; }
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 2em;
+    margin: 1em 0 1.4em; } }
+section > h2::before {
+  /* number before each section title */
+  color: #f29f0b; }
+
+p {
+  color: #40b165; }
+
+nav li a {
+  color: #399e5a; }
+
+nav li a:hover {
+  color: #4cbe71; }
+
+nav li a:visited {
+  color: white; }
+
+li a {
+  color: #f7bc53; }
+
+li a:hover {
+  color: #f9cf84;
+  text-decoration: underline; }
+
+li a:visited {
+  color: #f9cf84; }
+
+a {
+  color: #f26419; }
+
+a:hover {
+  color: #cc4e0c; }
+
+a:visited {
+  color: black; }
+
 header {
-  border: 2px solid black;
+  border: 2px solid #f6b33b;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -14,7 +75,7 @@ header {
   flex-flow: wrap; }
 
 footer {
-  border: 2px solid black;
+  border: 2px solid #f6b33b;
   display: flex;
   flex-flow: row;
   justify-content: space-around;
@@ -28,7 +89,7 @@ footer {
   flex-flow: column; }
 
 .summary {
-  border: 2px solid black;
+  border: 2px solid #f6b33b;
   margin-left: auto;
   margin-right: auto;
   width: 80%; }
@@ -58,7 +119,7 @@ footer {
 
 .preamble, .explanation, .participation, .benefits, .requirements {
   display: flex;
-  border: 2px solid black;
+  border: 2px solid #f6b33b;
   width: 80%;
   flex-flow: wrap;
   margin-left: auto;
@@ -69,7 +130,7 @@ footer {
 
 .design-selection, .design-archives, .zen-resources {
   display: flex;
-  border: 2px solid black;
+  border: 2px solid #f6b33b;
   width: 80%;
   flex-flow: column;
   margin-left: auto;
@@ -93,34 +154,34 @@ footer {
 
   .preamble {
     display: flex;
-    border: 2px solid black;
-    width: 50%;
+    border: 2px solid #f6b33b;
+    width: 49.9%;
     margin-left: 0; }
 
   .participation {
     display: flex;
-    border: 2px solid black;
+    border: 2px solid #f6b33b;
     width: 100%;
     grid-column-start: 1;
     grid-row-start: 3; }
 
   .requirements {
     display: flex;
-    border: 2px solid black;
+    border: 2px solid #f6b33b;
     width: 100%;
     grid-column-start: 1;
     grid-row-start: 5; }
 
   .explanation {
     display: flex;
-    border: 2px solid black;
+    border: 2px solid #f6b33b;
     width: 100%;
     grid-column-start: 2;
     grid-row-start: 2; }
 
   .benefits {
     display: flex;
-    border: 2px solid black;
+    border: 2px solid #f6b33b;
     width: 100%;
     grid-column-start: 2;
     grid-row-start: 4; }
